@@ -13,18 +13,10 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_1_4
+    targetCompatibility = JavaVersion.VERSION_1_4
     withJavadocJar()
     withSourcesJar()
-}
-
-testing {
-    suites {
-        val test by getting(JvmTestSuite::class) {
-            useJUnitJupiter("5.9.0")
-        }
-    }
 }
 
 publishing {
@@ -36,8 +28,8 @@ publishing {
                 description.set("Test data for HACBS JVM build service (Gradle version)")
                 url.set("https://github.com/dwalluck/hacbs-test-simple-gradle-jdk8")
                 properties.set(mapOf(
-                    "maven.compiler.source" to "1.8",
-                    "maven.compiler.target" to "1.8"
+                    "maven.compiler.source" to "1.4",
+                    "maven.compiler.target" to "1.4"
                 ))
                 licenses {
                     license {
