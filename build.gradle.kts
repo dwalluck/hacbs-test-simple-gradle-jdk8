@@ -43,7 +43,7 @@ publishing {
                 scm {
                     connection.set("scm:git:git://github.com/dwalluck/hacbs-test-simple-gradle-jdk8.git")
                     developerConnection.set("scm:git:ssh://github.com/dwalluck/hacbs-test-simple-gradle-jdk8.git")
-                    url.set("http://github.com/dwalluck/hacbs-test-simple-gradle-jdk8/")
+                    url.set("https://github.com/dwalluck/hacbs-test-simple-gradle-jdk8/")
                 }
             }
         }
