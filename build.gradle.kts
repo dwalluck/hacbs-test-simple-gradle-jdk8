@@ -8,10 +8,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    implementation(gradleApi())
-}
-
 java {
     sourceCompatibility = JavaVersion.VERSION_1_4
     targetCompatibility = JavaVersion.VERSION_1_4
